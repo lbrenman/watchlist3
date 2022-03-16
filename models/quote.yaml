@@ -1,0 +1,15 @@
+title: quote
+type: object
+x-tags:
+  - stock quote
+properties:
+  symbol:
+    type: string
+  lastPrice:
+    type: number
+  change:
+    type: number
+examples:
+  - symbol: AAPL
+    lastPrice: 157.58
+    change: 2.4900055

@@ -1,0 +1,20 @@
+openapi: 3.1.0
+info:
+  title: watchlist
+  version: '1.0'
+  summary: Stock Watch List API
+  description: Stock Watch List API
+  contact:
+    name: Leor Brenman
+servers:
+  - url: 'http://localhost:3000'
+paths: {}
+components:
+  schemas: {}
+  securitySchemes:
+    API-Key-1:
+      name: apikey
+      type: apiKey
+      in: query
+security:
+  - API-Key-1: []
