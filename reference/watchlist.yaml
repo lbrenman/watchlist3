@@ -8,7 +8,47 @@ info:
     name: Leor Brenman
 servers:
   - url: 'http://localhost:3000'
-paths: {}
+paths:
+  /watchlist:
+    get:
+      summary: Your GET endpoint
+      tags:
+        - Watch List
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: ../models/quote.yaml
+              examples:
+                example-1:
+                  value:
+                    - symbol: AAPL
+                      lastPrice: 157.58
+                      change: 2.4900055
+                    - symbol: TXN
+                      lastPrice: 174.74
+                      change: 2.4199982
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: string
+              examples:
+                example-1:
+                  value: error
+      operationId: get-watchlist
+      description: Get stock watchlist for array of symbols (comma separated)
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: stocklist
+          description: comma separated list of stock symbols
 components:
   schemas: {}
   securitySchemes:
@@ -18,3 +58,5 @@ components:
       in: query
 security:
   - API-Key-1: []
+tags:
+  - name: Watch List
