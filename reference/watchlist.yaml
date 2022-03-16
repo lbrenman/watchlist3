@@ -47,7 +47,7 @@ paths:
             type: string
           in: query
           name: stocklist
-          description: Array of comma separated stock symbols
+          description: 'Array of comma separated stock symbols (e.g. aapl,txn,amzn)'
 components:
   schemas: {}
   securitySchemes:
