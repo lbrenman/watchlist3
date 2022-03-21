@@ -44,12 +44,11 @@ paths:
       description: Stock Watch List API
       parameters:
         - schema:
-            type: array
+            type: string
           in: query
           name: stocklist
           description: 'Comma separated list of stock symbols (e.g. aapl,txn,amzn)'
           required: true
-          style: form
 components:
   schemas: {}
   securitySchemes:
