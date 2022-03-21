@@ -51,12 +51,6 @@ paths:
           required: true
 components:
   schemas: {}
-  securitySchemes:
-    API Key - 1:
-      name: apikey
-      type: apiKey
-      in: header
-security:
-  - API Key - 1: []
+  securitySchemes: {}
 tags:
   - name: Watch List
