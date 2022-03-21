@@ -9,7 +9,4 @@ properties:
     type: number
   change:
     type: number
-examples:
-  - symbol: AAPL
-    lastPrice: 157.58
-    change: 2.4900055
+examples: []
