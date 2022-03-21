@@ -8,5 +8,4 @@ properties:
   lastPrice:
     type: number
   change:
-    type: number
-examples: []
+    type: number  
