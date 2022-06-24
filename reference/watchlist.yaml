@@ -4,9 +4,15 @@ info:
   version: '1.0'
   contact:
     name: Leor Brenman
+    url: www.leorbrenman.com
+    email: lbrenman99@hotmail.com
   description: Stock Watch List API
+  license:
+    name: None
+    url: www.leorbrenman.com
 servers:
-  - url: 'http://localhost:3000'
+  - url: 'http://localhost:8080/api'
+    description: Localhost
 paths:
   /watchlist:
     get:
@@ -55,6 +61,13 @@ paths:
           style: form
 components:
   schemas: {}
-  securitySchemes: {}
+  securitySchemes:
+    apiKey:
+      name: apiKey
+      type: apiKey
+      in: header
 tags:
   - name: Watch List
+    description: Watch List
+security:
+  - apiKey: []
