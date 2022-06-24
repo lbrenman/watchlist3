@@ -13,6 +13,8 @@ info:
 servers:
   - url: 'http://localhost:8080/api'
     description: Localhost
+  - url: 'https://lbwatchlistapi.herokuapp.com/api'
+    description: Heroku
 paths:
   /watchlist:
     get:
