@@ -61,6 +61,7 @@ paths:
           description: 'Comma separated list of stock symbols (e.g. aapl,txn,amzn)'
           required: true
           style: form
+      x-internal: false
 components:
   schemas: {}
   securitySchemes:
