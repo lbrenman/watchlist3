@@ -13,8 +13,8 @@ info:
 servers:
   - url: 'http://localhost:8080/api'
     description: Localhost
-  - url: 'https://lbwatchlistapi.herokuapp.com/api'
-    description: Heroku
+  - url: 'https://axway-demo-design.aws-us2.dxchange.cloud:9443'
+    description: DX
 paths:
   /watchlist:
     get:
