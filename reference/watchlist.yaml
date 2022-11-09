@@ -56,11 +56,11 @@ paths:
             items:
               type: string
           in: query
-          explode: false
+          explode: true
           name: stocklist
           description: 'Comma separated list of stock symbols (e.g. aapl,txn,amzn)'
-          required: true
           style: form
+          required: true
       x-internal: false
 components:
   schemas: {}
